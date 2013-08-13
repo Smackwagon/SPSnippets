@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+<!-- =SharePoint - Content in Ribbon --> 
+<section id="s4-ribbonrow">
+<!-- ^ =SharePoint =Container =Ribbon - DO NOT DELETE
+-Creates scrollable area under Ribbon. 
+-->
+
+	<!-- =Ribbon =Container - Control -->
+	<SharePoint:SPRibbon runat="server" PlaceholderElementId="RibbonContainer" CssFile=""/>
+
+	<asp:ContentPlaceHolder ID="SPNavigation" runat="server">
+	<!-- ^ =Content Placeholder =Publishing - Enables publishing features on Publish tab in Ribbon -->
+		<SharePoint:DelegateControl runat="server" ControlId="PublishingConsole" Id="PublishingConsoleDelegate"/>
+	</asp:ContentPlaceHolder>
+
+	<div class="ms-core-webpartadder">
+	<!-- ^ =Page Tools - Add Web Parts Panel 
+	-Keep this within #s4-ribbonrow to avoid empty space being added between panel and content.
+	-ms-core-webpartadder is used by JavaScript and must be used in the wrapping container, which can be changed from a DIV to another tag.
+	-->
+		<div id="WebPartAdderUpdatePanelContainer">
+			<asp:UpdatePanel ID="WebPartAdderUpdatePanel" UpdateMode="Conditional" ChildrenAsTriggers="false" runat="server">
+				<ContentTemplate>
+					<WebPartPages:WebPartAdder ID="WebPartAdder" runat="server" />
+				</ContentTemplate>
+				<Triggers>
+				<asp:PostBackTrigger ControlID="WebPartAdder" />
+				</Triggers>
+			</asp:UpdatePanel>
+		</div>
+	</div>
+<!-- =SharePoint =Container - Ribbon Block - END #s4-ribbonrow -->
+</section>
+
+]]></content>
+	<tabTrigger>sp-ribbon</tabTrigger>
+	<scope>source.html</scope>
+</snippet>
+	
