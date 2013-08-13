@@ -1,3 +1,7 @@
+<!-- 
+	Created by Dustin Miller and Heather Solomon
+	http://sharepointexperience.com/
+-->
 <snippet>
 	<content><![CDATA[
 <Sharepoint:SPSecurityTrimmedControl ID="SPSecurityTrimmedControl1" runat="server" Permissions="${1:AddDelPrivateWebParts}">
