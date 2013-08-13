@@ -1,0 +1,106 @@
+<snippet>
+	<content><![CDATA[
+/* ==== Place the following styles in your custom CSS file ====*/
+
+	/* Font source for select styles 
+	-Update path appropriately for your font file location */
+		@font-face {
+			font-family: 'socialicoregular';
+			src: url('fonts/socialico-webfont.eot');
+			src: url('fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+			     url('fonts/socialico-webfont.woff') format('woff'),
+			     url('fonts/socialico-webfont.ttf') format('truetype'),
+			     url('fonts/socialico-webfont.svg#socialicoregular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+	/* Set social links on a single line */	
+		.spe-social li {
+			display: inline; /* Removes default line breaks around element */
+		}
+
+	/* Shared formatting for social links */
+		.spe-social a {
+			width: 54px; /* Width of icons - adjust based on set font size below*/
+			height:47; /* Height of icons - adjust based on set font size below */
+			display: inline-block; /* Needed to support width and height */
+			overflow: hidden; /* Hide anchor text */
+			padding-top: 5px; /* Adjust spacing to show full shadow effect*/
+			text-decoration: none; /* Remove default text underline */
+		}
+	
+	/* Shared formatting for social icons */
+		.spe-social a:before {
+			font-family:  "socialicoregular"; /* Social icon font */
+			font-size: 60px;
+			color: #000;
+			text-shadow: 0px 0px 8px #999388; /* Add shadow to icons */
+			padding: 0 30px 3px 3px ; /* Adjust spacing */
+		}
+		
+	/* Hover effect for social icons */
+		.spe-social a:hover:before {
+			color: white;
+			text-shadow: 0 0 8px #0D870E; /* Change shadow color for icons */
+		}
+		
+	/* Facebook icon */
+		.spe-social a[href*="facebook"]:before {
+			content: "f";
+		}
+		
+	/* Foursquare icon */
+		.spe-social a[href*="foursquare"]:before {
+			content: "/";
+		}
+
+	/* Google+ icon */
+		.spe-social a[href*="google"]:before {
+			content: "g";
+		}
+
+	/* LinkedIn icon */
+		.spe-social a[href*="linkedin"]:before {
+			content: "i";
+		}
+
+	/* Pinterest icon */
+		.spe-social a[href*="pinterest"]:before {
+			content: "7";
+		}
+		
+	/* RSS icon */
+		.spe-social a[href*="rss"]:before {
+			content: "r";
+		}
+
+	/* Twitter icon */
+		.spe-social a[href*="twitter"]:before {
+			content: "l";
+		}
+
+	/* YouTube icon */
+		.spe-social a[href*="youtube"]:before {
+			content: "x";
+		}
+/* ==== END Custom Styles ==== */
+
+
+/* ==== Place the following HTML in your custom master page file ====*/
+<ul class="spe-social">
+	<!-- Remove social networks as necessary and update paths for your profile(s) -->
+	<li><a href="http://facebook.com">Facebook</a></li>
+	<li><a href="http://foursquare.com">Foursquare</a></li>
+	<li><a href="http://google.com">Google+</a></li>
+	<li><a href="http://linkedin.com">LinkedIn</a></li>
+	<li><a href="http://pinterest.com">Pinterest</a></li>
+	<li><a href="http://rss.com">RSS</a></li>
+	<li><a href="http://twitter.com">Twitter</a></li>
+	<li><a href="http://youtube.com">YouTube</a></li>
+</ul>
+/* ==== END Master Page code ==== */
+]]></content>
+	<tabTrigger>sp-social</tabTrigger>
+	<description>SP: Social Network Icons</description>
+</snippet>
