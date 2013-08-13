@@ -32,10 +32,7 @@
 	</div>
 <!-- =SharePoint =Container - Ribbon Block - END #s4-ribbonrow -->
 </section>
-
 ]]></content>
 	<tabTrigger>sp-ribbon</tabTrigger>
-	<description>sp: Ribbon Control for SharePoint 2013</description>
-
+	<description>SP: Ribbon Control for SharePoint 2013</description>
 </snippet>
-	

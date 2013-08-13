@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<Sharepoint:SPSecurityTrimmedControl ID="SPSecurityTrimmedControl1" runat="server" Permissions="${1:AddDelPrivateWebParts}">
+	<!-- !REMOVE ME -->
+	<h1>Insert security trimmed contents.</h1>
+	<p>Update "Permissions" based on need. See full list at: <a href="http://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spbasepermissions.aspx">SP Base Permissions</a></p> 
+	<!-- /REMOVE ME -->
+</SharePoint:SPSecurityTrimmedControl>
+]]></content>
+	<tabTrigger>sp-sectrim</tabTrigger>
+	<description>SP: Security Trimmed Control</description>
+</snippet>
