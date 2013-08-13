@@ -35,6 +35,7 @@
 
 ]]></content>
 	<tabTrigger>sp-ribbon</tabTrigger>
-	<scope>source.html</scope>
+	<description>sp: Ribbon Control for SharePoint 2013</description>
+
 </snippet>
 	
