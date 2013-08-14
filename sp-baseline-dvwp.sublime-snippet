@@ -18,7 +18,7 @@
     </xsl:template>
     <xsl:template match="/dsQueryResponse/Rows/Row">
         <!-- This markup is used for each item in the list -->
-       <p><xsl:value-of select="@Title"/>
+       <p><xsl:value-of select="@Title"/></p>
   </xsl:template>
 </xsl:stylesheet>
 ]]></content>
